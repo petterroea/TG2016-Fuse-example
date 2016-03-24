@@ -1,0 +1,45 @@
+<!-- Hey! This is a comment. Anything "gray" in sublime is a comment. These are here to give you some guidance on your quest -->
+<App Theme="Basic">
+	<DockPanel>
+		<PageControl>
+			<LinearNavigation />
+			<!-- Page 1 -->
+		    <StackPanel>
+		    	<ImageFill File="background.png" />
+		    	<Text FontSize="40" Alignment="TopCenter">Page 1</Text>
+		    	<Text FontSize="20" Margin="10" TextWrapping="Wrap" TextAlignment="Center">This page has a background image, and some text</Text>
+		    </StackPanel>
+		    <!-- Page 2 -->
+		    <StackPanel Background="#EEE">
+		    	<Rectangle ux:Name="RedRect" Width="120" Height="120" Alignment="Top" Margin="40" Color="#2196F3">
+		    		<DropShadow />
+		    		<WhilePressed>
+		    			<Rotate Degrees="90" Duration="1" />
+		    		</WhilePressed>
+		    	</Rectangle>
+		    	<Rectangle Width="120" Height="120" Alignment="Bottom" Margin="40" Color="#FFC107">
+		    		<DropShadow />
+		    		<WhilePressed>
+		    			<Rotate Degrees="90" Duration="1" />
+		    		</WhilePressed>
+		    	</Rectangle>
+		    	<Rectangle Width="120" Height="120" Alignment="Bottom" Margin="40" Color="#FF5722">
+		    		<DropShadow />
+		    		<WhilePressed>
+		    			<Scale Factor=".5" Duration="1" />
+		    		</WhilePressed>
+		    	</Rectangle>
+		    </StackPanel>
+		    <!-- Page 3 -->
+		    <DockPanel>
+		    	<Panel Dock="Top" Height="40" Color="#2196F3">
+		    		<DropShadow />
+		    		<Text TextColor="#FFF" Alignment="TopLeft" FontSize="25" Margin="10">Article</Text>
+		    	</Panel>
+		    	<ScrollView>
+		    		<Text Margin="10" TextWrapping="Wrap">This is the beginning of an interresting article</Text>
+		    	</ScrollView>
+		    </DockPanel>
+		</PageControl>
+	</DockPanel>
+</App>
